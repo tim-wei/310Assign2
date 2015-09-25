@@ -1,5 +1,10 @@
 package ca.ubc.cpsc310.gitlab.client;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
+import ca.ubc.cpsc310.gitlab.client.user.IUser;
 import ca.ubc.cpsc310.gitlab.shared.FieldVerifier;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
@@ -12,7 +17,9 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DialogBox;
+import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
@@ -38,5 +45,15 @@ public class GitLab implements EntryPoint {
 	public void onModuleLoad() {
 	
 		Window.alert("Loaded");
+	}
+	
+	/**
+	 * Used to display users 
+	 * @param users
+	 */
+	public void displayUsers(List<IUser> users) {
+		/**
+		 * TODO
+		 */
 	}
 }
