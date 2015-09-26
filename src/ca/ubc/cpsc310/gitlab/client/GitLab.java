@@ -62,7 +62,22 @@ public class GitLab implements EntryPoint {
 				
 			}});
 	}
-	
+	public void onModuleLoad() {
+		
+		service.getUsers(new AsyncCallback<List<IUser>>(){
+
+			@Override
+			public void onFailure(Throwable caught) {
+					Window.alert("Error occured " + caught.getClass() + " : " + caught.getMessage());
+				
+			}
+
+			@Override
+			public void onSuccess(List<IUser> result) {
+				Window.alert("Got list back with " +  result.size() + " entries");
+				
+			}});
+	}
 	
 	/**
 	 * Used to display users 
