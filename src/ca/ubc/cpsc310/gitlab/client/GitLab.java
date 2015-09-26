@@ -63,7 +63,6 @@ public class GitLab implements EntryPoint {
 			}});
 	}
 	
-	
 	/**
 	 * Used to display users 
 	 * @param users
