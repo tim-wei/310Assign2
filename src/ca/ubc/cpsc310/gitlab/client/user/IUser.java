@@ -25,6 +25,4 @@ public interface IUser extends Serializable {
 	
 	public void removeItemFromWishList(ProductItem o);
 	
-	public void removeItemFromShoppingCart(ProductItem o);
-	
 }
