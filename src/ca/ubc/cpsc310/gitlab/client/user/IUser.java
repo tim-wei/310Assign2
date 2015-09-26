@@ -1,7 +1,6 @@
 package ca.ubc.cpsc310.gitlab.client.user;
 
 import java.io.Serializable;
-import java.util.List;
 
 import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
 
