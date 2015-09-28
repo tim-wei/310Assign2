@@ -1,12 +1,12 @@
 package ca.ubc.cpsc310.gitlab.client.user;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
 
 
+@SuppressWarnings("unchecked")
 public class User implements IUser {
 
 	/**
@@ -72,5 +72,11 @@ public class User implements IUser {
 	public void removeItemFromWishList(ProductItem o) {
 		((List<ProductItem>) data.get(WISHLIST)).remove(o);
 	}
+
+	@Override
+	public void removeItemFromShoppingCart(ProductItem o) {
+		((List<ProductItem>) data.get(SHOPPINGCART)).add(o);
+	}
+
 	
 }
