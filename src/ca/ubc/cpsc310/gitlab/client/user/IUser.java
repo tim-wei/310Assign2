@@ -1,7 +1,7 @@
 package ca.ubc.cpsc310.gitlab.client.user;
 
-import java.io.Serializable;
 import java.util.List;
+import java.io.Serializable;
 
 import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
 
@@ -26,5 +26,4 @@ public interface IUser extends Serializable {
 	public void removeItemFromWishList(ProductItem o);
 	
 	public void removeItemFromShoppingCart(ProductItem o);
-	
 }
